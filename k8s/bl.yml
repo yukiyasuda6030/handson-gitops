@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: mydemo
+    role: web
+  name: mydemo
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    name: mydemo
+    role: web
+  type: LoadBalancer
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "mydemo"
+  labels:
+    name: mydemo
+    role: web
+spec:
+  containers:
+    - image: docker.io/takuyak/nginx-sample-bl
+      name: mydemo
