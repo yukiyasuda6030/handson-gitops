@@ -8,6 +8,7 @@ https://github.com/tbuchi888/demo-js-nginx-docker-k8s.git
 
 ## k8s manifestfiles git clone
 git clone https://github.com/tbuchi888/demo-js-nginx-docker-k8s.git
+
 cd demo-js-nginx-docker-k8s
 
 ## create service
@@ -17,6 +18,7 @@ kubectl describe svc
 
 ## create deployment
 kubectl create -f k8s/bl.yml 
+
 kubectl create -f k8s/gr.yml 
 
 kubectl describe deployment
