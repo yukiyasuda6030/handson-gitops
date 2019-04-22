@@ -20,7 +20,7 @@ spec:
         color: green
     spec:
       containers:
-      - image: docker.io/takuyak/nginx-sample-gr
+      - image: docker.io/takuyak/nginx-sample-gr:latest
         name: green
         ports:
           - containerPort: 80

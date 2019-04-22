@@ -21,7 +21,8 @@ li{list-style:none}
 /* =============================================================================
    My CSS
    ========================================================================== */
-/* ---- 3d ---- */
+
+/* ---- base ---- */
 #titles
 {
 	position: absolute;
@@ -55,7 +56,10 @@ li{list-style:none}
 	animation: scroll 100s linear 4s infinite;
 }
 
-/* ---- base ---- */
+@keyframes scroll {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
 
 html,body{ 
 	width:100%;
