@@ -13,7 +13,7 @@ But these are still being verified.
 ```
 cd demo-js-nginx/
 docker build -t takuyak/nginx-sample-bl:v1 ./
-docker run -d --name demo -p 80:80 takuyak/nginx-sample-gr:v1
+docker run -d --name demo -p 80:80 takuyak/nginx-sample-bl:v1
 docker stop demo
 docker rm demo
 docker login
