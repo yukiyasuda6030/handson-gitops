@@ -14,7 +14,7 @@ spec:
   selector:
     matchLabels:
       app: nginxjs
-      color: blue
+      color: green
       name: app
   template:
     metadata:
