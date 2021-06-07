@@ -1,5 +1,4 @@
 # demo-js-nginx-docker-k8s
-
 This is demo page of js on Nginx on Docker and k8s. 
 But these are still being verified.
 + js demo page.
@@ -7,7 +6,6 @@ But these are still being verified.
 + Dockerfile of Nginx + demo page. 
 + manifestfiles of k8s.
 + Concourse pipeline is used [jacopen/simple-php](https://github.com/jacopen/simple-php).
-
 
 ## docker build/push Commands for mac or linux
 ```
@@ -21,7 +19,6 @@ docker push takuyak/nginx-sample-bl:v1
 ```
 
 ## deploy to k8s
-
 ```
 # edit /k8s/bl.yml and changed tag
 kubectl -f /k8s/bl.yml
