@@ -20,6 +20,9 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
       - name: Push to Docker Hub
         uses: docker/build-push-action@v1
         with:
