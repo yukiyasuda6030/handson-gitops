@@ -30,3 +30,12 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: ${{ secrets.DOCKER_USERNAME }}/githubtest
           tag_with_ref: true
+      - name: Checkout other repo
+        uses: actions/checkout@v2
+        with:
+          repository: tbuchi888/argocd_sample_repo
+          path: other
+      - name: List files in the repository
+        run: |
+          ls ./
+          ls other/
