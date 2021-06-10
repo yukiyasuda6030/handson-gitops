@@ -1,4 +1,4 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: blue
@@ -25,7 +25,7 @@ spec:
         color: blue
     spec:
       containers:
-      - image: IMAGE:TAG
+      - image: docker.io/IMAGE:TAG
         name: blue
         ports:
           - containerPort: 80
