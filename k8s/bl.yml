@@ -25,7 +25,7 @@ spec:
         color: blue
     spec:
       containers:
-      - image: githubtest:e8918c9c3214ba0abcde470b56c12f2b17248f8c
+      - image: tkawavmw/githubtest:513c014c766063079e3b78adb023793fa185b2bd
         name: blue
         ports:
           - containerPort: 80
