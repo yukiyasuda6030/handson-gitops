@@ -25,7 +25,7 @@ spec:
         color: blue
     spec:
       containers:
-      - image: docker.io/tkawavmw/githubtest:9b30ab217016938d8de913203657c477e92bfa31
+      - image: docker.io/tkawavmw/githubtest:91628c0848babb07f8cd2ef5fe11d83cd6d60c9d
         name: blue
         ports:
           - containerPort: 80
