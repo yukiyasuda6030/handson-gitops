@@ -1,11 +1,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: blue
+  name: green
   labels:
     name: app
     app: nginxjs
-    color: blue
+    color: green
 spec:
   minReadySeconds: 30
   strategy:
@@ -14,18 +14,18 @@ spec:
   selector:
     matchLabels:
       app: nginxjs
-      color: blue
+      color: green
       name: app
   template:
     metadata:
-      name: blue
+      name: green
       labels:
         name: app
         app: nginxjs
-        color: blue
+        color: green
     spec:
       containers:
       - image: docker.io/takuyak/nginx-sample-gr:v1
-        name: blue
+        name: green
         ports:
           - containerPort: 80
