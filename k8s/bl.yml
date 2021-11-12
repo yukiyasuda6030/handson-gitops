@@ -25,7 +25,7 @@ spec:
         color: blue
     spec:
       containers:
-      - image: docker.io/takuyak/demo-aks-gitops:16d02d8b656b05a322e7b44c5e78a8bf02d97a59
+      - image: docker.io/takuyak/demo-aks-gitops:f267143a4c9e2122c5a378a7ec11b4d15f9a95d9
         name: blue
         ports:
           - containerPort: 80
