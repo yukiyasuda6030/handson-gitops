@@ -25,7 +25,7 @@ spec:
         color: blue
     spec:
       containers:
-      - image: docker.io/takuyak/githubtest:745400ad713fc29c0b78baae709bbb6b03d66582
+      - image: docker.io/takuyak/githubtest:880a820d3d17c2ef985adad5503584aa8945a763
         name: blue
         ports:
           - containerPort: 80
