@@ -1,2 +1,2 @@
 # argocd-sample-repo
-This is demo page of argocd sample repo. 
+This page is a demo page for argocd and other GitOps.
