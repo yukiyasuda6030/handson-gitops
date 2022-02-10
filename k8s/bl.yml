@@ -9,7 +9,7 @@ metadata:
 spec:
   strategy:
     type: RollingUpdate
-  replicas: 10
+  replicas: 4
   selector:
     matchLabels:
       app: nginxjs
@@ -24,7 +24,7 @@ spec:
         color: blue
     spec:
       containers:
-      - image: docker.io/takuyak/githubtest:d3b7e6f48a7e05651b00e0830b09fba0adc4110b
+      - image: docker.io/takuyak/nginx-sample-gr:v1
         name: blue
         ports:
           - containerPort: 80
